@@ -1,0 +1,24 @@
+{
+  "name": "gcf-puppeteer-sample",
+  "version": "1.0.0",
+  "description": "A sample Google Cloud Function that uses puppeteer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx functions-framework --target=puppeteer-sample-function",
+    "deploy": "gcloud functions deploy puppeteer-sample-function --entry-point=puppeteer-sample-function --trigger-http --allow-unauthenticated --runtime=nodejs18 --memory=512MB",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewrobertson/gcf-puppeteer-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewrobertson/gcf-puppeteer-sample"
+  },
+  "homepage": "https://github.com/matthewrobertson/gcf-puppeteer-sample",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.3.0",
+    "puppeteer": "^21.4.1"
+  }
+}
